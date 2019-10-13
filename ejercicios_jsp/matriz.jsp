@@ -24,9 +24,22 @@ private static final int columnas =12;
 
 <body>
     <table>
-        <%for (int filas=0; filas<filas; filas++) {%>
-            
+        <%for (int filas1=0; filas1<filas; filas1++) {%>
+            <tr>
+                <%for (int columnas1=0; columnas1<columnas; columnas1++) {
+                    int value =mat[filas1][columnas1];   
+                    String class=null;
+                    if (value<0){
+                        class="negativo";
+                    } else if (value==0){
+                        class="cero";    
+                    } else{    
+                    class="positivo";
+                    }%>
+                <td class='<%class%>'><%=value%></td>
+                <%}%>
+            </tr>
+        <%}%>
     </table>
 </body>
-
 </html>

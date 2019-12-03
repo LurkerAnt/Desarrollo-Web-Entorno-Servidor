@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Create your Character</h1>
+
+    <form action="main.jsp" id="charChoose">
+    
+        <input type="text" placeholder="Name" name="charName" id="nameChar">
+    
+        <p>Choose your class: </p>
+        <input type="radio" name="charClass" id="Fighter" value="Fighter">
+        <label for="Fighter">Fighter</label>
+        <br>
+        <p> Fighters are your main line of defense. They tend to be the first to battle or tanks enemy attacks.<br>
+            They are not the brightest in the bunch.<br>
+            Traits: Constitution + 2, Intelligence - 2<br>
+            Favour: Hand to hand combat, so Strength is a given.
+        </p>
+        <br>
+        <input type="radio" name="charClass" id="Wizard" value="Wizard">
+        <label for="Wizard">Wizard</label>
+        <br>
+        <p>
+            Wizards are one of the most versatile warriors in the world they can damage the enemies while also healing their companions.<br>
+            However they are more fragile than your mama's china.<br>
+            Traits: Intelligence + 2, Constitution - 2<br>
+            Favour: Combating in the distance, they can heal.<br>
+        </p>
+        <br>
+        <button type="submit" form="charChoose">Roll Character</button>
+    </form>
+    <br>
+    <p>If you have a character you can load it. (si le pulsas peta, el resto funciona)</p>
+    <form action="loadCharacter.jsp">
+        <button type="submit">Load Character</button>
+    </form>
+    
+</body>
+</html>

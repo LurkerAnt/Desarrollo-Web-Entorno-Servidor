@@ -9,10 +9,10 @@
 <body>
 
     <h1>Crea tu personaje</h1>
-
-    <form action="main.jsp" id="seleccionPersonaje">
+    <!-- Te da a elegir el tipo de personaje que quieres y escribes tu nombre para lanzarlo al randomizador de stats-->
+    <form action="statsRandomizer.jsp" id="seleccionPersonaje">
     
-        <input type="text" placeholder="Nombre:" name="charName" id="nombrePersonaje">
+        <input type="text" placeholder="Nombre:" name="nombrePersonaje" id="nombrePersonaje">
     
         <p>Choose your class: </p>
         <input type="radio" name="clasePersonaje" id="barbaro" value="barbaro">
@@ -38,10 +38,15 @@
         <br>
         <button type="submit" form="seleccionPersonaje">Generar estadisticas.</button>
     </form>
+
+    
+
+
+
     <br>
-    <p>If you have a character you can load it. (si le pulsas peta, el resto funciona)</p>
+    <p>Si tienes un personaje lo puedes cargar aquí. (si le pulsas peta, el resto funciona)</p>
     <form action="loadCharacter.jsp">
-        <button type="submit">Load Character</button>
+        <button type="submit">Cargar personaje</button>
     </form>
     
 </body>

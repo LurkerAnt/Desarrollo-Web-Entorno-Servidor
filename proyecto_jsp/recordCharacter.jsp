@@ -13,7 +13,7 @@ if (request.getParameter("completeInformation")!=null){
     Cookie charCookie = new Cookie("completeInformation", completeChar);
 	cookie.setMaxAge(30 * 24 * 60 * 60); // 30 días.
     response.addCookie(charCookie);
-    
+    System.out.println(charCookie);
 } else{
 
     //recojo todos los parámetros aqui. 
